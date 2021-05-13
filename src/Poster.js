@@ -30,11 +30,13 @@ class Poster extends React.Component {
         `https://techvrecruitment-default-rtdb.europe-west1.firebasedatabase.app/test.json`,
         { data }
       )
+     
       .then((res) => {
         console.log(res);
         console.log(res.data);
-      });
-    .then (alert("Your job post is submited!"););
+        alert("Your job post is submited!");
+    });
+    
   }
 
   render() {
