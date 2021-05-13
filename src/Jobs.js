@@ -14,6 +14,7 @@ class Jobs extends React.Component {
       .get(
         "https://techvrecruitment-default-rtdb.europe-west1.firebasedatabase.app/test.json"
       )
+      .then (alert("Your job post is submited!"););
       .then((results) => {
         console.log(results);
         const fetchedResults = [];
