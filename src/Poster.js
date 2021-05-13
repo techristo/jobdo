@@ -34,6 +34,7 @@ class Poster extends React.Component {
         console.log(res);
         console.log(res.data);
       });
+    .then (alert("Your job post is submited!"););
   }
 
   render() {
